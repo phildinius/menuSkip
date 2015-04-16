@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- STRINGS -->
+    <string name="app_name">menuSkip</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_button">Edit Food Preferences</string>
+    <string name="menus_button">View Menus</string>
+    <string name="copyright">(C) 2015 Phil Dinius</string>
+    <string name="chooseFood">Choose Your Food Preferences</string>
+    <string name="like">Like</string>
+    <string name="neutral">Neutral</string>
+    <string name="dislike">Dislike</string>
+
+    <string name="americanCheese">American Cheese</string>
+    <string name="arugula">Arugula</string>
+    <string name="bacon">Bacon</string>
+    <string name="beef">Beef</string>
+    <string name="bleuCheese">Bleu Cheese</string>
+    <string name="cheddarCheese">Cheddar Cheese</string>
+    <string name="ciabatta">Ciabatta</string>
+    <string name="cornmealKaiserRoll">Cornmeal Kaiser Roll</string>
+    <string name="egg">Egg</string>
+    <string name="garlic">Garlic</string>
+    <string name="guacamole">Guacamole</string>
+    <string name="honeyBBQ">Honey BBQ</string>
+    <string name="jalapenos">Jalapenos</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="mayo">Mayo</string>
+    <string name="oliveOil">Olive Oil</string>
+    <string name="onionBun">Onion Bun</string>
+    <string name="onionStraws">Onion Straws</string>
+    <string name="onions">Onions</string>
+    <string name="pepperJackCheese">Pepper-Jack Cheese</string>
+    <string name="pickles">Pickles</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="ranch">Ranch</string>
+    <string name="relish">Relish</string>
+    <string name="salsa">Salsa</string>
+    <string name="steakSauce">Steak Sauce</string>
+    <string name="teriyaki">Teriyaki</string>
+    <string name="tomato">Tomato</string>
+    <string name="tortillaChips">Tortilla Chips</string>
+    <string name="whiteBun">White Bun</string>
+
+    <!-- COLORS -->
+    <color name="tan">#ccbb88</color>
+    <color name="medTan">#af9c71</color>
+    <color name="darktan">#917d59</color>
+    <color name="black">#000000</color>
+    <string name="title_activity_main_list">mainListActivity</string>
+
+</resources>

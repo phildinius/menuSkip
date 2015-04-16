@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/tan">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/test_image"
+            android:src="@drawable/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menus_button"
+            android:textAllCaps="false"
+            android:padding="8dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/darktan"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#303030"
+            />
+
+        <Button
+            android:id="@+id/pref_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_button"
+            android:textAllCaps="false"
+            android:padding="8dp"
+            android:background="@color/darktan"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#303030"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:text="@string/copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="24dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,931 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/tan">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:paddingTop="50dp"
+            android:paddingBottom="30dp"
+            android:text="@string/chooseFood"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0">
+            <TableRow>
+                <TextView
+                    android:id="@+id/arugula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"/>
+                <LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/like"
+                        android:padding="8dp"
+                        android:background="@color/medTan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/neutral"
+                        android:padding="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dislike"
+                        android:padding="8dp"
+                        android:background="@color/medTan"/>
+                </LinearLayout>
+            </TableRow>
+
+         </TableLayout>
+
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="0">
+
+            <!-- americanCheese -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/americanCheese"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_american_cheese"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_american_cheese"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_american_cheese"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- arugula -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arugula"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_arugula"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_arugula"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_arugula"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- bacon -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bacon"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_bacon"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_bacon"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_bacon"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- beef -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beef"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_beef"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_beef"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_beef"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- bleuCheese -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bleuCheese"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_bleuCheese"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_bleuCheese"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_bleuCheese"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- cheddarCheese -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cheddarCheese"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_cheddarCheese"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_cheddarCheese"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_cheddarCheese"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- ciabatta -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ciabatta"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_ciabatta"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_ciabatta"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_ciabatta"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- cornmealKaiserRoll -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cornmealKaiserRoll"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_cornmealKaiserRoll"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_cornmealKaiserRoll"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_cornmealKaiserRoll"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- egg -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/egg"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_egg"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_egg"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_egg"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- garlic -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/garlic"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_garlic"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_garlic"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_garlic"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- guacamole -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guacamole"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_guacamole"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_guacamole"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_guacamole"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- honeyBBQ -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/honeyBBQ"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_honeyBBQ"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_honeyBBQ"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_honeyBBQ"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- jalapenos -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jalapenos"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_jalapenos"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_jalapenos"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_jalapenos"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- lettuce -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lettuce"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_lettuce"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_lettuce"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_lettuce"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- mayo -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mayo"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_mayo"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_mayo"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_mayo"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- oliveOil -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oliveOil"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_oliveOil"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_oliveOil"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_oliveOil"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- onionBun -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onionBun"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_onionBun"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_onionBun"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_onionBun"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- onionStraws -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onionStraws"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_onionStraws"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_onionStraws"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_onionStraws"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- onions -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onions"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_onions"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_onions"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_onions"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- pepperJackCheese -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pepperJackCheese"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_pepperJackCheese"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_pepperJackCheese"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_pepperJackCheese"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- pickles -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pickles"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_pickles"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_pickles"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_pickles"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- pineapple -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pineapple"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_pineapple"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_pineapple"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_pineapple"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- ranch -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ranch"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_ranch"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_ranch"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_ranch"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- relish -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relish"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_relish"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_relish"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_relish"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- salsa -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salsa"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_salsa"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_salsa"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_salsa"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- steakSauce -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/steakSauce"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_steakSauce"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_steakSauce"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_steakSauce"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- teriyaki -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teriyaki"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_teriyaki"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_teriyaki"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_teriyaki"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- tomato -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tomato"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_tomato"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_tomato"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_tomato"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- tortillaChips -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tortillaChips"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_tortillaChips"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_tortillaChips"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_tortillaChips"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+            <!-- whiteBun -->
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whiteBun"
+                    android:padding="8dp"/>
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/like_whiteBun"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                    <RadioButton android:id="@+id/neutral_whiteBun"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/dislike_whiteBun"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:background="@color/medTan"/>
+                </RadioGroup>
+            </TableRow>
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
